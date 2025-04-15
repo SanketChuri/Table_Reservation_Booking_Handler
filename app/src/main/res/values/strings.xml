@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="submit">submit</string>
+    <string name="welcome_to_the_home_screen">Welcome to the Home Screen!</string>
+    <string name="fab_add_item">add_items</string>
+    <string name="table_setup">Table setup</string>
+    <string name="enter_text">Enter text</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="guest_count">Guest Count</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="table_number">Table Number</string>
+    <string name="enter_customer_name">Enter customer name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="enter_guest_count">Enter guest count</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="todo">TODO</string>
+    <string name="enter_table_number">Enter table number</string>
+    <string name="table_capacity">Table Capacity</string>
+    <string name="enter_table_capacity">Enter table capacity</string>
+    <string name="delete_button">delete button</string>
+    <string name="notes">Notes</string>
+    <string name="update_button">update_button</string>
+    <string name="update">Update</string>
+    <string name="update_booking">Update booking</string>
+    <string name="table_icon">table_icon</string>
+</resources>

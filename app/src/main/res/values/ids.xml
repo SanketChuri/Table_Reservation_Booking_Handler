@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextCustomerName" type="id" />
+    <item name="editTextPhoneNumber" type="id" />
+    <item name="editTextGuestCount" type="id" />
+    <item name="textViewDate" type="id" />
+    <item name="editText" type="id" />
+    <item name="textViewTime" type="id" />
+    <item name="spinnerTableNumber" type="id" />
+<!--    <item name="emptyView" type="id" />-->
+    <item name="notes" type="id"/>
+    <item name="emptyView" type="id" />
+</resources>

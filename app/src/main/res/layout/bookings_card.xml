@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- Row 1: Name, Time, Table No., Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/customer_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_person_24"
+                android:contentDescription="@string/table_icon"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/card_customerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingEnd="8dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_access_time_24"
+                android:contentDescription="@string/table_icon"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/card_bookingTime"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:text="Time"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+
+        <!-- Icon + Table No. Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/icon_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_table_restaurant_24"
+                android:contentDescription="@string/table_icon"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/card_tableNumber"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:text="Table No."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/update_booking"
+            android:src="@drawable/update"
+            app:tint="?android:attr/textColorPrimary"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/delete_button"
+            android:src="@drawable/baseline_delete_forever_24"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Row 2: Phone Number, Guest Count -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_phone_24"
+                android:contentDescription="@string/table_icon"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/card_customerNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone No"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingEnd="8dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/guest_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_people_24"
+                android:contentDescription="@string/table_icon"
+                android:layout_marginEnd="4dp" />
+            <TextView
+                android:id="@+id/card_guestCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guest Count"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingEnd="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Row 3: Notes and See More -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/card_Notes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/card_SeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toggleSeeMore"
+            android:paddingStart="8dp"
+            android:text="See More"
+            android:textColor="?android:attr/textColorLink"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:paddingBottom="0dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>
